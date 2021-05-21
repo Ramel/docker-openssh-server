@@ -12,7 +12,8 @@ RUN \
  apk add --no-cache --upgrade \
 	curl \
 	logrotate \
-	nano \
+	vim \
+	rsync \
 	sudo && \
  echo "**** install openssh-server ****" && \
  if [ -z ${OPENSSH_RELEASE+x} ]; then \
